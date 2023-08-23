@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'General sans';
+    background-color: rgb(15, 15, 15);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+/* #border {
+    border-bottom: 2px solid transparent;
+}
+#border:hover {
+  border-bottom: 2px solid rgb(247, 247, 247); 
+  transition: 0.3s; 
+  transition-timing-function: ease-in-out;
+} */
+#border {
+    position: relative;
+    cursor: pointer;
+    /* border-bottom: 1px solid transparent; */
+}
+#border::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+#border:hover::after {
+     transform: scaleX(1);
+}
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.hero_main {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    top:0 ; */
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero_show {
+    margin-top: 90px;
+}
+
+.hero_show h1 {
+    font-family: 'General sans';
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 40px;
+    opacity: .6;
+    line-height: 1;
+}
+
+#d2 {
+    padding-left: 130px;
+}
+
+.both {
+    width: fit-content;
+}
+
+.both h4 {
+    font-size: 14px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.hero_head {
+    margin-top: 100px;
+    padding-right: 50px;
+    line-height: 2;
+}
+.hero_head h5 {
+    margin-top: .5vw;
+    font-size:1vw;
+    text-transform: uppercase;
+    text-align: right;
+}
+.hero_link {
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icone {
+    display: flex;
+    gap: 10px;
+}
+.circle {
+   
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(115, 115, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero_link a {
+    text-decoration: none;
+}
+.second-hero {
+    width: 90%;
+    height: 100vh;
+    padding-top: 200px;
+
+}
+.element {
+    position: relative;
+    padding:3.5vw 3vw ;
+    width: 100%;
+    border-top: 1px solid #888;
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.element h2 {
+    padding-left: 12px;
+}
+.element span {
+    font-size: .9rem;
+    font-weight: 900;
+    opacity: .4;
+}
+.last {
+    border-bottom: 1px solid #888;
+}
+.element img {
+    display: none;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+.paregrap {
+    /* padding-top: 100px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    padding: 10vw 10vw;
+
+    padding-left: 40vw;
+}
+.paregrap img {
+    padding-left: 20px;
+    width: 200px;
+}
+.pa_1{
+    width: 25rem;
+    /* line-height: 1.1;
+    gap: 30px; */
+}
+.pa_1 h5 {
+    color: #888;
+    text-transform: uppercase;
+    opacity: .5;
+}
+.pa_1 p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.pa_1 a {
+    padding: 9.5px 22px;
+    /* width: 40px; */
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid #e4e1e1;  
+    border-radius: 20px; 
+}
+.smalltext {
+    width: 100%;
+    height: 100px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    /* gap: 20px; */   
+}
+.smalltext h3 {
+    opacity: .5;
+    color: #888;
+    margin-bottom: 10px;
+}
+.smalltext a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+
+}
+footer {
+    width: 100%;
+    opacity: .7;
+    /* position: fixed;
+    bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:50px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.first {
+    font-size: 1.1rem;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.second {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.second a {
+    text-decoration: none;
+}
+#border-1 {
+
+    border-bottom: 1.5px solid transparent;
+    transition: 0.4s;
+}
+
+#border-1:hover{
+    border-bottom: 1.5px solid white;
+    
+}
+@media(min-width:1000px){
+     
+}
