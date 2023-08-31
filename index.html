@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cynthiaugwu</title>
-    <link rel="stylesheet" href="loco.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="loco.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,7 +36,7 @@
             </div>
             <div class="hero_link">
                 <a href="#" id="border">CURRENTLY WORKING AT YML<i class="ri-arrow-right-up-line"></i> </a>
-                <a href="#" id="border" >PROTOPIE AMBASSADOR<i class="ri-arrow-right-up-line"></i></a>
+                <a href="#" id="border">PROTOPIE AMBASSADOR<i class="ri-arrow-right-up-line"></i></a>
                 <div class="icone">
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
@@ -84,9 +85,9 @@
         <footer>
             <div class="first">
                 <span>2023&copy;</span>
-                <h5>00.00 PM EST</h5>
+                <h5 id="timezone">00.00 PM EST</h5>
             </div>
-            <div class="second" >
+            <div class="second">
                 <a href="#" id="border-1">dribble</a>
                 <a href="#" id="border-1">instagram</a>
                 <a href="#" id="border-1">linkdin</a>
@@ -95,8 +96,20 @@
         </footer>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive@0.4.2/bin/lcm.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src=""></script>
+    <script src="js/index.js"></script> -->
+    <script>
+        let time = document.getElementById("timezone");
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000);
+
+    </script>
+
+
+
 
 </body>
 
