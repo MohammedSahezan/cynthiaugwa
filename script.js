@@ -6,20 +6,16 @@ const scroll = new LocomotiveScroll({
 });
 
 
+
 function circule() {
     window.addEventListener("mousemove",function(de){
-        document.querySelector("#minicircle"),style.transform = `translate(${de.clientX}px, ${de.clientY}px)`
+        document.querySelector("#minicircle").style.transform = `translate(${de.clientX}px, ${de.clientY}px)`
 
     })
 };
 circule();
-// function circule() {
-//     window.addEventListener("mousemove",function(dets){
-//         document.querySelector("#minicircle").style.transform = `translate(${dets.clientx}px, ${dets.clienty}px)`;
-//     });
-// };
 
-// circule();
+
 
 
 
