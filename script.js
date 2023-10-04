@@ -1,11 +1,25 @@
-// import LocomotiveScroll from 'locomotive-scroll';
-
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('.main'),
-//     smooth: true
-// });
 
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
+
+function circule() {
+    window.addEventListener("mousemove",function(de){
+        document.querySelector("#minicircle"),style.transform = `translate(${de.clientX}px, ${de.clientY}px)`
+
+    })
+};
+circule();
+// function circule() {
+//     window.addEventListener("mousemove",function(dets){
+//         document.querySelector("#minicircle").style.transform = `translate(${dets.clientx}px, ${dets.clienty}px)`;
+//     });
+// };
+
+// circule();
 
 
 
