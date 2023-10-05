@@ -15,6 +15,30 @@ function circule() {
 };
 circule();
 
+function firstaniem() {
+    var tl = gsap.timeline();
+    tl.from(".nav",{
+            y :"-10",
+            opacity : 0,
+            duration:1.5,
+            ease: Expo.easeInOut
+    })
+    .to(".new_bound",{
+        y:"0",
+        duration:2,
+        ease:Expo.easeInOut ,
+        stagger :.2
+    })
+    // .from(".hero_show",{
+    //     y :-10,
+    //     opacity : 0,
+    //     delay : -.5,
+    //     duration:1.5,
+    //     ease: Expo.easeInOut
+    // })
+};
+firstaniem();
+
 
 
 

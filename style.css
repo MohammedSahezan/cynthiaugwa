@@ -83,7 +83,7 @@ body {
     overflow: hidden;
 }
 .bound .new_bound{
-    transform: translate(100%);
+    transform: translatey(100%);
 }
 
 .hero_show {
