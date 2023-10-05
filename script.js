@@ -26,18 +26,33 @@ function firstaniem() {
     .to(".new_bound",{
         y:"0",
         duration:2,
+        delay:-1,
         ease:Expo.easeInOut ,
         stagger :.2
     })
-    // .from(".hero_show",{
-    //     y :-10,
-    //     opacity : 0,
-    //     delay : -.5,
-    //     duration:1.5,
-    //     ease: Expo.easeInOut
-    // })
+    
 };
 firstaniem();
+
+function circulemove(){
+    // define default valse
+    var xscale = 1;
+    var yscale = 1;
+
+
+    var xprave = 0;
+    var yprave = 0;
+    window.addEventListener("mousemove",function(dets){
+            var diffx = dets.clientX - xprave;
+            var diffy = dets.clientY - yprave;
+            xprave = dets.clientX;
+            yprave = dets.clientY;
+
+            gasp.utils.clamp(1.2,.8,diffx);
+            gsap.utils.clamp(1.2,.8)
+    })
+};
+circulemove();
 
 
 
