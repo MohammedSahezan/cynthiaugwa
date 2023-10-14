@@ -132,7 +132,7 @@ body {
 .hero_link {
     padding: 0 2vw;
     width: 100%;
-    position: absolute;
+    /* position: relative; */
     bottom: 5%;
     display: flex;
     align-items: center;

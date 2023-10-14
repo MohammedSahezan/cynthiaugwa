@@ -7,13 +7,7 @@ const scroll = new LocomotiveScroll({
 
 
 
-function circule() {
-    window.addEventListener("mousemove",function(de){
-        document.querySelector("#minicircle").style.transform = `translate(${de.clientX}px, ${de.clientY}px)`
 
-    })
-};
-circule();
 
 function firstaniem() {
     var tl = gsap.timeline();
@@ -34,25 +28,39 @@ function firstaniem() {
 };
 firstaniem();
 
-function circulemove(){
-    // define default valse
-    var xscale = 1;
-    var yscale = 1;
 
+function circule() {
+    window.addEventListener("mousemove",function(de){
+        document.querySelector("#minicircle").style.transform = `translate(${de.clientX}px, ${de.clientY}px) `
 
-    var xprave = 0;
-    var yprave = 0;
-    window.addEventListener("mousemove",function(dets){
-            var diffx = dets.clientX - xprave;
-            var diffy = dets.clientY - yprave;
-            xprave = dets.clientX;
-            yprave = dets.clientY;
-
-            gasp.utils.clamp(1.2,.8,diffx);
-            gsap.utils.clamp(1.2,.8)
     })
 };
-circulemove();
+circule();
+
+// function circuleanime(){
+//     // define default valse
+//     var xscale = 1;
+//     var yscale = 1;
+
+
+//     var xprave = 0;
+//     var yprave = 0;
+//     window.addEventListener("mousemove",function(dets){
+//         xscale = gsap.utils.clamp(.8,1.2,dets.clientX-xprave);
+//         yscale = gsap.utils.clamp(.8,1.2,dets.clienty-yprave);
+//             // var diffx = dets.clientX - xprave;
+//             // var diffy = dets.clientY - yprave;
+//             xprave = dets.clientX;
+//             yprave = dets.clientY;
+
+//             // gasp.utils.clamp(1.2,.8,diffx);
+//             // gsap.utils.clamp(1.2,.8)
+
+//             circule(xscale,yscale);
+//     })
+// };
+// circuleanime();
+
 
 
 
